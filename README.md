@@ -24,7 +24,7 @@ pip install watcheagle
 Invoke `watcheagle` from the command line, providing the command to execute and optionally the directory to watch.
 
 ```
-python -m watcheagle <command_to_execute> [--source <directory>]
+watcheagle <command_to_execute> [--source <directory>]
 ```
 
 ### Examples
@@ -32,7 +32,7 @@ python -m watcheagle <command_to_execute> [--source <directory>]
 1.  **Restarting a Python script in the current directory:**
 
     ```bash
-    python -m watcheagle python main.py
+    watcheagle python main.py
     ```
 
     This command will execute `python main.py` and watch for changes in the current directory. Any file modification will trigger a restart of the `main.py` script.
@@ -40,7 +40,7 @@ python -m watcheagle <command_to_execute> [--source <directory>]
 2.  **Restarting a Node.js application monitoring a specific directory:**
 
     ```bash
-    python -m watcheagle node app.js --source ./src
+    watcheagle node app.js --source ./src
     ```
 
     This command will execute `node app.js` and monitor the `./src` directory.
@@ -48,7 +48,7 @@ python -m watcheagle <command_to_execute> [--source <directory>]
 3.  **Using with a shell script:**
 
     ```bash
-    python -m watcheagle ./build_and_run.sh --source ./code
+    watcheagle ./build_and_run.sh --source ./code
     ```
 
     This command assumes you have a `build_and_run.sh` script that builds your project and then runs it. It will watch the `./code` directory for changes.
@@ -56,7 +56,7 @@ python -m watcheagle <command_to_execute> [--source <directory>]
 4.  **Monitoring current directory with react application**
 
     ```bash
-    python -m watcheagle yarn start --source ./
+    watcheagle yarn start --source ./
     ```
 
     This is equivalent to running `yarn start`, and the tool will restart yarn if a file is changed in the current directory

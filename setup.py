@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="watcheagle",
-    version="1.0.1",
+    version="1.0.2",
     author="lixelv",
     author_email="simeongfremenko@gmail.com",
     description="watcheagle - is hot reloader for your project based on watchdog!",
@@ -16,7 +16,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/lixelv/watcheagle",
     packages=find_packages(),
-    install_requires=[],
+    install_requires=["watchdog", "psutil"],
     classifiers=[
         "Programming Language :: Python :: 3.11",
     ],

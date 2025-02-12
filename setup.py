@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="watcheagle",
-    version="1.0.0",
+    version="1.0.1",
     author="lixelv",
     author_email="simeongfremenko@gmail.com",
     description="watcheagle - is hot reloader for your project based on watchdog!",
